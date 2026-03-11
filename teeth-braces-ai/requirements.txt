@@ -1,0 +1,34 @@
+# Teeth Braces Detection AI - Requirements
+# =========================================
+
+# Core YOLOv8
+ultralytics==8.3.0
+
+# Image Processing
+opencv-python==4.10.0.84
+pillow==10.4.0
+
+# Data Processing
+numpy==1.26.4
+pandas==2.2.2
+
+# Visualization
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# Machine Learning
+scikit-learn==1.5.0
+pyyaml==6.0.2
+
+# Web Application
+streamlit==1.37.0
+
+# Utilities
+tqdm==4.66.4
+
+# NOTE: ultralytics requires PyTorch. If streamlit cloud fails to install
+# a compatible torch binary automatically, consider pinning a CPU-only
+# torch wheel (for example: torch==2.x.x) compatible with the deployment
+# environment or using a smaller model. Test locally first.
+pytest>=7.0.0
+

@@ -1,0 +1,21 @@
+<parameter name="content">[server]
+port = 8501
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "localhost"
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#667eea"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "Inter"
+
+[runner]
+magicEnabled = true
+fastReruns = true
+</parameter>

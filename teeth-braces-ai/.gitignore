@@ -1,0 +1,38 @@
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Model weights and large artifacts
+*.pt
+yolov8*.pt
+runs/
+logs/
+*.log
+
+# Dataset and cache
+braces_dataset_fixed_yolov8/
+train/
+valid/
+test/
+labels.cache
+
+# Streamlit
+.streamlit/
+
+# Editor and system files
+.DS_Store
+.vscode/
+.idea/
+*.iml
+
+# Python virtual env
+venv/
+ENV/

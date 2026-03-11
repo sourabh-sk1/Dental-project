@@ -1,0 +1,27 @@
+# Teeth Braces Placement Detection - Requirements
+# Install these dependencies using: pip install -r requirements.txt
+
+# YOLOv8 - Ultralytics library for object detection
+ultralytics>=8.0.0
+
+# OpenCV - For image processing and visualization
+opencv-python>=4.8.0
+
+# NumPy - For numerical operations
+numpy>=1.24.0
+
+# Streamlit - For web interface
+streamlit>=1.28.0
+
+# Matplotlib - For plotting and visualization
+matplotlib>=3.7.0
+
+# Pillow - Image handling
+Pillow>=10.0.0
+
+# PyYAML - For reading config files
+PyYAML>=6.0
+
+# tqdm - Progress bars
+tqdm>=4.65.0
+

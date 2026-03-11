@@ -1,0 +1,16 @@
+# Dataset configuration for YOLOv8 Teeth Braces Detection
+# Path is relative to this YAML file location
+
+path: .
+train: train/images
+val: valid/images
+test: test/images
+
+# Number of classes
+nc: 2
+
+# Class names - simplified for braces placement detection
+names:
+  0: correct_brace
+  1: incorrect_brace
+
