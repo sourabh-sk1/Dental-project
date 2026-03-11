@@ -5,7 +5,10 @@
 ultralytics==8.3.0
 
 # Image Processing
-opencv-python==4.10.0.84
+# Use headless OpenCV for server environments (no GUI). Replacing
+# opencv-python with opencv-python-headless avoids X11/display issues on
+# Streamlit Cloud and other headless hosts.
+opencv-python-headless==4.7.0.72
 pillow==10.4.0
 
 # Data Processing
@@ -30,5 +33,7 @@ tqdm==4.66.4
 # a compatible torch binary automatically, consider pinning a CPU-only
 # torch wheel (for example: torch==2.x.x) compatible with the deployment
 # environment or using a smaller model. Test locally first.
+
+# Test runner for smoke tests
 pytest>=7.0.0
 

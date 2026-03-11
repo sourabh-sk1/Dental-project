@@ -4,7 +4,7 @@ A Streamlit web application for detecting orthodontic teeth braces and determini
 
 ## 🌐 Live Demo
 
-Deploy this app to Streamlit Cloud for free!
+Deploy this app to Streamlit Cloud for free free
 
 ## 📋 Features
 
