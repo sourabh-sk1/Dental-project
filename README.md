@@ -15,6 +15,7 @@ Color-Coded Results - Green = Correct Brace, Red = Incorrect Brace
 Confidence Scores - View confidence levels for each detection
 CSV Export - Download detection results as CSV
 Model Performance Metrics - View mAP, Precision, Recall metrics
+
 🚀 Quick Deploy to Streamlit Cloud
 
 Fork this repository to your GitHub account
@@ -38,6 +39,7 @@ teeth-braces-ai/
 │   ├── __init__.py
 │   └── tooth_mapping.py # Tooth position mapping utilities
 └── README.md
+
 🛠️ Local Development
 
 Prerequisites
@@ -65,11 +67,13 @@ mAP@50	0.879
 mAP@50-95	0.494
 Precision	0.850
 Recall	0.800
+
 💡 Usage Tips
 
 For best results: Use clear, well-lit dental photos
 Confidence threshold: Adjust in sidebar (default: 40%)
 Image size: Larger sizes = better accuracy but slower processing
+
 🔧 Configuration
 
 Confidence Threshold
@@ -83,10 +87,12 @@ Choose inference image size:
 640: Fastest
 960: Balanced (recommended)
 1280: Most accurate
+
 📝 Detection Classes
 
 Correct Brace (Green) - Properly positioned orthodontic brackets
 Incorrect Brace (Red) - Misaligned or improperly placed brackets
+
 📄 License
 
 MIT License
