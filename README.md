@@ -1,12 +1,15 @@
-🦷 Teeth Braces Placement Detection AI
+
+Teeth Braces Placement Detection AI
 
 A Streamlit web application for detecting orthodontic teeth braces and determining if they are correctly or incorrectly placed using YOLOv8.
 
-🌐 Live Demo
+ 
+Live Demo
 
 Deploy this app to Streamlit Cloud for free free
 
-📋 Features
+ 
+Features
 
 Single Image Detection - Upload a dental image and get instant results
 Batch Processing - Process multiple images at once
@@ -16,7 +19,8 @@ Confidence Scores - View confidence levels for each detection
 CSV Export - Download detection results as CSV
 Model Performance Metrics - View mAP, Precision, Recall metrics
 
-🚀 Quick Deploy to Streamlit Cloud
+ 
+ Quick Deploy to Streamlit Cloud
 
 Fork this repository to your GitHub account
 
@@ -26,7 +30,8 @@ Connect your GitHub and select this repository
 
 Deploy! - Streamlit will automatically detect streamlit_app.py and install dependencies
 
-📁 Project Structure
+ 
+ Project Structure
 
 teeth-braces-ai/
 ├── streamlit_app.py       # Main Streamlit web application
@@ -40,7 +45,9 @@ teeth-braces-ai/
 │   └── tooth_mapping.py # Tooth position mapping utilities
 └── README.md
 
-🛠️ Local Development
+
+ 
+Local Development
 
 Prerequisites
 
@@ -60,7 +67,9 @@ Run the app
 streamlit run streamlit_app.py
 The app will open at http://localhost:8501
 
-📊 Model Performance
+
+ 
+Model Performance
 
 Metric	Value
 mAP@50	0.879
@@ -68,13 +77,13 @@ mAP@50-95	0.494
 Precision	0.850
 Recall	0.800
 
-💡 Usage Tips
+ Usage Tips
 
 For best results: Use clear, well-lit dental photos
 Confidence threshold: Adjust in sidebar (default: 40%)
 Image size: Larger sizes = better accuracy but slower processing
 
-🔧 Configuration
+Configuration
 
 Confidence Threshold
 
@@ -88,16 +97,18 @@ Choose inference image size:
 960: Balanced (recommended)
 1280: Most accurate
 
-📝 Detection Classes
+Detection Classes
 
 Correct Brace (Green) - Properly positioned orthodontic brackets
 Incorrect Brace (Red) - Misaligned or improperly placed brackets
 
-📄 License
 
-MIT License
+ License
 
-🙏 Acknowledgments
+ MIT License
 
-Ultralytics for YOLOv8
-Open source dental datasets contributors
+
+ Acknowledgments
+
+ Ultralytics for YOLOv8
+ Open source dental datasets contributors
