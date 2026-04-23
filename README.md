@@ -1,114 +1,100 @@
 
-Teeth Braces Placement Detection AI
+# Dental Braces Detection AI
 
-A Streamlit web application for detecting orthodontic teeth braces and determining if they are correctly or incorrectly placed using YOLOv8.
+A professional YOLOv8-based computer vision solution for detecting orthodontic braces in dental images and assessing placement accuracy.
 
- 
-Live Demo
+This repository includes a Streamlit demo, dataset utilities, and training scripts for orthodontic bracket detection.
 
-Deploy this app to Streamlit Cloud for free free
+## Features
 
- 
-Features
+- Single image inference with instant visual feedback
+- Batch processing for multiple dental images
+- Tooth position mapping for central incisors, lateral incisors, canines, and premolars
+- Color-coded output for correct vs incorrect brace placement
+- Confidence scores for each detection
+- CSV export for result review and reporting
+- Built-in model performance metrics
 
-Single Image Detection - Upload a dental image and get instant results
-Batch Processing - Process multiple images at once
-Tooth Identification - Identifies tooth position (Central Incisor, Lateral Incisor, Canine, Premolars)
-Color-Coded Results - Green = Correct Brace, Red = Incorrect Brace
-Confidence Scores - View confidence levels for each detection
-CSV Export - Download detection results as CSV
-Model Performance Metrics - View mAP, Precision, Recall metrics
+## Deployment
 
- 
- Quick Deploy to Streamlit Cloud
+To deploy this application on Streamlit Cloud:
 
-Fork this repository to your GitHub account
+1. Fork the repository to your GitHub account.
+2. Create or sign in to a Streamlit Cloud account.
+3. Connect your GitHub repository.
+4. Deploy — Streamlit will detect `streamlit_app.py` and install dependencies automatically.
 
-Create a Streamlit Cloud account at https://streamlit.io/cloud
+## Repository Structure
 
-Connect your GitHub and select this repository
+- `teeth-braces-ai/`
+  - `streamlit_app.py` — Streamlit web application entry point
+  - `requirements.txt` — Python dependencies
+  - `data.yaml` — YOLOv8 dataset configuration
+  - `best.pt` — Trained YOLOv8 model weights
+  - `.streamlit/` — Streamlit configuration files
+  - `utils/` — Helper modules for tooth mapping and inference
+- `braces_dataset_fixed_yolov8/`
+  - `train.py` — Training pipeline for YOLOv8
+  - `detect.py` — Inference script
+  - `webcam_detect.py` — Webcam-based detection example
+  - `convert_labels.py` — Dataset label conversion utility
+  - `data.yaml` — Dataset configuration
+  - `runs/` — Generated training and detection outputs
 
-Deploy! - Streamlit will automatically detect streamlit_app.py and install dependencies
+## Local Development
 
- 
- Project Structure
+### Prerequisites
 
-teeth-braces-ai/
-├── streamlit_app.py       # Main Streamlit web application
-├── best.pt               # Trained YOLOv8 model weights (~87MB)
-├── requirements.txt      # Python dependencies
-├── data.yaml            # Dataset configuration
-├── .streamlit/
-│   └── config.toml      # Streamlit configuration
-├── utils/
-│   ├── __init__.py
-│   └── tooth_mapping.py # Tooth position mapping utilities
-└── README.md
+- Python 3.9 or newer
+- `pip`
+- Optional: virtual environment
 
+### Installation
 
- 
-Local Development
-
-Prerequisites
-
-Python 3.9+
-pip
-Installation
-
-Clone the repository
-git clone https://github.com/your-username/teeth-braces-ai.git
-cd teeth-braces-ai
-Create virtual environment (optional but recommended)
+```bash
+git clone https://github.com/sourabh-sk1/Dental-project.git
+cd Dental-project/teeth-braces-ai
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies
+source venv/bin/activate
 pip install -r requirements.txt
-Run the app
+```
+
+### Run the App
+
+```bash
 streamlit run streamlit_app.py
-The app will open at http://localhost:8501
+```
+
+Open `http://localhost:8501` in your browser.
 
 
- 
-Model Performance
 
-Metric	Value
-mAP@50	0.879
-mAP@50-95	0.494
-Precision	0.850
-Recall	0.800
+## Model Performance
 
- Usage Tips
+| Metric      | Value |
+|------------|:-----:|
+| mAP@50     | 0.879 |
+| mAP@50-95  | 0.494 |
+| Precision  | 0.850 |
+| Recall     | 0.800 |
 
-For best results: Use clear, well-lit dental photos
-Confidence threshold: Adjust in sidebar (default: 40%)
-Image size: Larger sizes = better accuracy but slower processing
+## Usage Recommendations
 
-Configuration
+- Use clear, well-lit dental images for best detection results.
+- Increase the confidence threshold to reduce false positives.
+- Use larger inference image sizes for improved accuracy, with slower processing.
 
-Confidence Threshold
+## Configuration Notes
 
-Adjust the minimum confidence score in the sidebar. Higher values = fewer but more confident detections.
+- **Confidence threshold**: Higher values yield more precise results at the cost of recall.
+- **Image size**: Lower settings are faster, higher settings improve localization accuracy.
 
-Image Size
+## License
 
-Choose inference image size:
+This project is licensed under the MIT License.
 
-640: Fastest
-960: Balanced (recommended)
-1280: Most accurate
+## Acknowledgments
 
-Detection Classes
+- Ultralytics for YOLOv8
+- Open-source dental imaging contributors
 
-Correct Brace (Green) - Properly positioned orthodontic brackets
-Incorrect Brace (Red) - Misaligned or improperly placed brackets
-
-
- License
-
- MIT License
-
-
- Acknowledgments
-
- Ultralytics for YOLOv8
- Open source dental datasets contributors
